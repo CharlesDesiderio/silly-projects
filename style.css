@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+}
+
+#spoopButton {
+  display: block;
+  margin: auto;
+}
+
+.spoopiness {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  transition: .1s;
+}
+
+.makeSpoop {
+  animation-duration: .75s;
+  animation-name: spoop;
+}
+
+@keyframes spoop {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 10%;
+    transform: scale(1.05)
+  }
+  20% {
+    top: 20%;
+    transform: scale (1.075)
+  }
+  30% {
+    top: 30%;
+    transform: scale(1.1)
+  }
+  40% {
+    top: 40%;
+    transform: scale(2.2)
+  }
+  60% {
+    top: 50%;
+    transform: scale(6)
+  }
+  80% {
+    top: 20%;
+    transform: scale(12)
+  }
+  90% {
+    top: 10%;
+    transform: scale(20)
+  }
+}
